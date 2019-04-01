@@ -1,18 +1,16 @@
 gets
-a = gets.chomp.split.map(&:to_i)
+a = gets.chomp.split.map(&:to_i).sort.reverse
 
 alice = 0
 bob   = 0
 
-a.size.times do |n|
-  if n.even?
-    alice += a.max
+
+a.each_with_index do |e, i|
+  if i.even?
+    alice += e
   else
-    bob += a.max
+    bob += e
   end
-  a.delete_at(a.find_index(a.max))
 end
 
 puts alice - bob
-
-# 大きい順に並べ替えて順番に入れていく
