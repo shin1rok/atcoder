@@ -1,0 +1,29 @@
+
+重なったゴーレムは消えると仮定
+yyyyyyyy
+AABCBDBA
+A L
+ynyyyyyn
+AABCBDBA
+B R
+ynnynyny
+AABCBDBA
+A R
+nynynynn
+AABCBDBA
+
+
+重なったゴーレムは消ないと仮定
+11111111
+AABCBDBA
+A L
+10111120
+AABCBDBA
+B R
+10020202
+AABCBDBA
+A R
+01020200
+AABCBDBA
+
+
